@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: royalblue;
+    padding: 2rem 4rem;
+    display: grid;
+    gap: 4rem;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: .1rem .1rem 0px rgba(255, 255, 255, 0.534);
+}
+
+.search {
+    background-color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5rem;
+    box-shadow: .5rem .5rem 0px rgba(255, 255, 255, 0.534);
+}
+
+.search span {
+    display: block;
+    align-content: center;
+}
+
+.search input{
+    border: none;
+    border-bottom: solid black .1rem;
+    padding: 0;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.search button {
+    background-color: royalblue;
+    color: white;
+    padding: .5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: space-between;
+    padding: auto;
+    gap: 1rem;
+    margin: auto;
+}
+
+.card {
+    height: 20rem;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    text-align: center;
+    box-shadow: .5rem .5rem 0 rgba(0, 0, 0, 0.226);
+}
+
+.card h2 {
+    font-size: 2rem;
+}
+
+.card div {
+    font-size: 4rem;
+}
+
+.card button {
+    background-color: rgb(219, 90, 90);
+    border-radius: 5rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+    border: none;
+}
+
+@media (max-width: 460px){
+    body {
+        padding: 1rem 2rem;
+    }
+}
